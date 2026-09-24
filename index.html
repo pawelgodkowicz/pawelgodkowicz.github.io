@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- No prose lives in this file. The description meta tag is created at
+       runtime by main.js from assets/js/i18n.js, so it follows the active
+       language. Only names and URLs stay literal here. -->
+  <title>Paweł Godkowicz — Data Analyst</title>
+  <meta name="author" content="Paweł Godkowicz">
+  <meta name="theme-color" content="#1F3D2B">
+  <link rel="canonical" href="https://pawelgodkowicz.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Paweł Godkowicz — Data Analyst">
+  <meta property="og:url" content="https://pawelgodkowicz.github.io/">
+  <meta property="og:image" content="https://pawelgodkowicz.github.io/assets/img/portrait.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#site-content" data-i18n="a11y.skipToContent"></a>
+
+  <header class="site-header">
+    <a class="brand" href="#hero">
+      <span class="brand__name">Paweł Godkowicz</span>
+      <span class="brand__role" data-i18n="header.role"></span>
+    </a>
+
+    <div class="header-actions">
+      <nav class="header-socials" data-i18n-attr="aria-label:a11y.socialNav">
+        <a class="social-link" href="https://www.linkedin.com/in/pawelgodkowicz" target="_blank"
+          rel="noopener noreferrer" data-i18n-attr="aria-label:header.linkedin;title:header.linkedin">
+          <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+        </a>
+        <a class="social-link" href="https://github.com/pawelgodkowicz" target="_blank" rel="noopener noreferrer"
+          data-i18n-attr="aria-label:header.github;title:header.github">
+          <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+        </a>
+        <button class="social-link" type="button" data-copy-email
+          data-i18n-attr="aria-label:header.copyEmail;title:header.copyEmail">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </nav>
+
+      <div class="language-switch">
+        <span class="language-label" id="language-label-pl" aria-hidden="true">PL</span>
+        <label class="switch">
+          <input type="checkbox" id="language-toggle" data-i18n-attr="aria-label:header.language">
+          <span class="switch__slider"></span>
+        </label>
+        <span class="language-label" id="language-label-en" aria-hidden="true">ENG</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <h1 class="hero__greeting" data-i18n="hero.greeting"></h1>
+        <div class="hero__lead">
+          <p data-i18n="hero.intro"></p>
+          <p data-i18n="hero.description"></p>
+        </div>
+
+        <div class="hero__nav">
+          <button class="nav-trigger" type="button" id="nav-trigger" aria-expanded="false" aria-controls="site-content"
+            data-i18n-attr="aria-label:hero.toggleMenu">
+            <ion-icon name="apps-outline" aria-hidden="true"></ion-icon>
+          </button>
+          <nav class="nav-menu" data-i18n-attr="aria-label:a11y.sectionNav">
+            <a class="nav-link" href="#about" data-i18n="nav.about"></a>
+            <button class="nav-link nav-link--accent" type="button" id="resume-trigger" data-i18n="nav.resume"></button>
+            <a class="nav-link" href="#contact" data-i18n="nav.contact"></a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="hero__portrait">
+        <img src="assets/img/portrait.png" width="675" height="900" alt="" data-i18n-attr="alt:hero.portraitAlt">
+      </div>
+    </div>
+  </section>
+
+  <main class="site-content" id="site-content" hidden>
+    <section class="section" id="about">
+      <h2 class="section__title" data-i18n="about.title"></h2>
+      <div class="bio">
+        <p data-i18n="about.lead"></p>
+        <p data-i18n="about.python"></p>
+        <p data-i18n="about.education"></p>
+        <p data-i18n="about.sharing"></p>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="section" id="toolbox">
+      <h2 class="section__title" data-i18n="toolbox.title"></h2>
+      <p class="section__intro" data-i18n="toolbox.intro"></p>
+
+      <!-- Tool names are proper nouns, identical in every language.
+           Drift position, delay and duration are assigned per index in style.css. -->
+      <ul class="tech-ocean">
+        <li class="tech-bubble"><ion-icon name="logo-python" aria-hidden="true"></ion-icon><span>Python</span></li>
+        <li class="tech-bubble"><ion-icon name="server-outline" aria-hidden="true"></ion-icon><span>SQL querying</span></li>
+        <li class="tech-bubble"><ion-icon name="bar-chart-outline" aria-hidden="true"></ion-icon><span>Power BI</span></li>
+        <li class="tech-bubble"><ion-icon name="git-branch-outline" aria-hidden="true"></ion-icon><span>Git</span></li>
+        <li class="tech-bubble"><ion-icon name="grid-outline" aria-hidden="true"></ion-icon><span>Pandas</span></li>
+        <li class="tech-bubble"><ion-icon name="cube-outline" aria-hidden="true"></ion-icon><span>Docker</span></li>
+        <li class="tech-bubble"><ion-icon name="flash-outline" aria-hidden="true"></ion-icon><span>PySpark</span></li>
+        <li class="tech-bubble"><ion-icon name="calculator-outline" aria-hidden="true"></ion-icon><span>NumPy</span></li>
+        <li class="tech-bubble"><ion-icon name="hardware-chip-outline" aria-hidden="true"></ion-icon><span>Scikit-learn</span></li>
+        <li class="tech-bubble"><ion-icon name="swap-horizontal-outline" aria-hidden="true"></ion-icon><span>REST API</span></li>
+        <li class="tech-bubble"><ion-icon name="code-slash-outline" aria-hidden="true"></ion-icon><span>Jupyter</span></li>
+        <li class="tech-bubble"><ion-icon name="cloud-outline" aria-hidden="true"></ion-icon><span>AWS</span></li>
+        <li class="tech-bubble"><ion-icon name="map-outline" aria-hidden="true"></ion-icon><span>QGIS</span></li>
+        <li class="tech-bubble"><ion-icon name="analytics-outline" aria-hidden="true"></ion-icon><span>Matplotlib</span></li>
+        <li class="tech-bubble"><ion-icon name="terminal-outline" aria-hidden="true"></ion-icon><span>Linux / Bash</span></li>
+        <li class="tech-bubble"><ion-icon name="sparkles-outline" aria-hidden="true"></ion-icon><span>Prompt Engineering</span></li>
+      </ul>
+    </section>
+
+    <hr class="divider">
+
+    <section class="section" id="hobbies">
+      <h2 class="section__title" data-i18n="hobbies.title"></h2>
+      <div class="hobby-list">
+        <article class="hobby">
+          <img class="hobby__image" src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=500&amp;h=400&amp;fit=crop&amp;q=80"
+            width="500" height="400" loading="lazy" alt="" data-i18n-attr="alt:hobbies.crossfit.alt">
+          <div class="hobby__body">
+            <ion-icon class="hobby__icon" name="barbell-outline" aria-hidden="true"></ion-icon>
+            <h3 class="hobby__title" data-i18n="hobbies.crossfit.title"></h3>
+            <p class="hobby__text" data-i18n="hobbies.crossfit.body"></p>
+          </div>
+        </article>
+
+        <article class="hobby">
+          <img class="hobby__image" src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=500&amp;h=400&amp;fit=crop&amp;q=80"
+            width="500" height="400" loading="lazy" alt="" data-i18n-attr="alt:hobbies.outdoor.alt">
+          <div class="hobby__body">
+            <ion-icon class="hobby__icon" name="bicycle-outline" aria-hidden="true"></ion-icon>
+            <h3 class="hobby__title" data-i18n="hobbies.outdoor.title"></h3>
+            <p class="hobby__text" data-i18n="hobbies.outdoor.body"></p>
+          </div>
+        </article>
+
+        <article class="hobby">
+          <img class="hobby__image" src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=500&amp;h=400&amp;fit=crop&amp;q=80"
+            width="500" height="400" loading="lazy" alt="" data-i18n-attr="alt:hobbies.games.alt">
+          <div class="hobby__body">
+            <ion-icon class="hobby__icon" name="dice-outline" aria-hidden="true"></ion-icon>
+            <h3 class="hobby__title" data-i18n="hobbies.games.title"></h3>
+            <p class="hobby__text" data-i18n="hobbies.games.body"></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="section" id="contact">
+      <h2 class="section__title" data-i18n="contact.title"></h2>
+      <ul class="contact-list">
+        <li class="contact-card">
+          <a class="contact-card__link" href="mailto:p.godkowicz@gmail.com">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            <span>p.godkowicz@gmail.com</span>
+          </a>
+          <button class="copy-button" type="button" data-copy-email
+            data-i18n-attr="aria-label:contact.copy;title:contact.copy">
+            <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </li>
+        <li class="contact-card">
+          <a class="contact-card__link" href="https://www.linkedin.com/in/pawelgodkowicz" target="_blank"
+            rel="noopener noreferrer">
+            <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+            <span>LinkedIn</span>
+          </a>
+        </li>
+        <li class="contact-card">
+          <a class="contact-card__link" href="https://github.com/pawelgodkowicz" target="_blank"
+            rel="noopener noreferrer">
+            <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+            <span>GitHub</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p data-i18n="footer.rights"></p>
+  </footer>
+
+  <!-- The CV ships as ciphertext (assets/docs/resume.enc). The password is
+       never stored anywhere; it is turned into a key here, in the browser. -->
+  <dialog class="resume-dialog" id="resume-dialog">
+    <form method="dialog" id="resume-form">
+      <h2 class="resume-dialog__title" data-i18n="resume.title"></h2>
+      <p class="resume-dialog__text" data-i18n="resume.prompt"></p>
+
+      <label class="resume-dialog__label" for="resume-password" data-i18n="resume.passwordLabel"></label>
+      <input class="resume-dialog__input" type="password" id="resume-password" name="password"
+        autocomplete="current-password" required>
+
+      <p class="resume-dialog__message" id="resume-message" role="status" aria-live="polite"></p>
+
+      <div class="resume-dialog__actions">
+        <button class="resume-dialog__button resume-dialog__button--ghost" type="button" id="resume-cancel"
+          data-i18n="resume.cancel"></button>
+        <button class="resume-dialog__button" type="submit" id="resume-submit" data-i18n="resume.submit"></button>
+      </div>
+    </form>
+  </dialog>
+
+  <p class="visually-hidden" id="copy-status" role="status" aria-live="polite"></p>
+</body>
+
+</html>

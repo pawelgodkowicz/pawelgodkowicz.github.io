@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Editors and local tooling
+.vscode/
+.idea/
+.claude/
+*.swp
+
+# Local scratch
+*.bak
+*.tmp
+backup_*/
+node_modules/
+
+# The unencrypted CV. Only assets/docs/resume.enc may be published —
+# anything in here would be served verbatim by GitHub Pages.
+private/
