@@ -7,7 +7,15 @@
 
   <!-- No prose lives in this file. The description meta tag is created at
        runtime by main.js from assets/js/i18n.js, so it follows the active
-       language. Only names and URLs stay literal here. -->
+       language. Only names and URLs stay literal here.
+
+       og:description is absent on purpose. Link-preview crawlers (LinkedIn,
+       Slack, Facebook) read the raw HTML and never run scripts, so injecting
+       it would be pointless — they would not see it. The cost is accepted: a
+       shared link shows the title and portrait but no description. To get one
+       back there is exactly one way, and it puts a literal sentence back into
+       this file:
+           <meta property="og:description" content="…"> -->
   <title>Paweł Godkowicz — Data Analyst</title>
   <meta name="author" content="Paweł Godkowicz">
   <meta name="theme-color" content="#1F3D2B">
